@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Vue工程化基础配置 | 凡尘轩</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" herf="favicon.ico">
+    <mata  http-equiv="Pragma" content="no-cache"></mata >
+    <mata  http-equiv="Cache-Control" content="no-cache,must-revalidate"></mata >
+    <mata   http-equiv="Expires" content="0"></mata  >
+    <meta name="description" content="凡尘若水，冷暖自知">
+    
+    <link rel="preload" href="/blog/assets/css/0.styles.d2bfba94.css" as="style"><link rel="preload" href="/blog/assets/js/app.eb693d96.js" as="script"><link rel="preload" href="/blog/assets/js/2.afc338c8.js" as="script"><link rel="preload" href="/blog/assets/js/39.38a9037e.js" as="script"><link rel="prefetch" href="/blog/assets/js/10.82231913.js"><link rel="prefetch" href="/blog/assets/js/11.7b3f3f9e.js"><link rel="prefetch" href="/blog/assets/js/12.b4596e9f.js"><link rel="prefetch" href="/blog/assets/js/13.03fddeb4.js"><link rel="prefetch" href="/blog/assets/js/14.d364a7eb.js"><link rel="prefetch" href="/blog/assets/js/15.8084771a.js"><link rel="prefetch" href="/blog/assets/js/16.2aa0a37d.js"><link rel="prefetch" href="/blog/assets/js/17.0026b7ec.js"><link rel="prefetch" href="/blog/assets/js/18.d336336f.js"><link rel="prefetch" href="/blog/assets/js/19.797e2f7f.js"><link rel="prefetch" href="/blog/assets/js/20.8504c149.js"><link rel="prefetch" href="/blog/assets/js/21.bcd7243c.js"><link rel="prefetch" href="/blog/assets/js/22.aabff019.js"><link rel="prefetch" href="/blog/assets/js/23.3f2b4953.js"><link rel="prefetch" href="/blog/assets/js/24.7eb78313.js"><link rel="prefetch" href="/blog/assets/js/25.2bb78d35.js"><link rel="prefetch" href="/blog/assets/js/26.9b19edf8.js"><link rel="prefetch" href="/blog/assets/js/27.1cde7e22.js"><link rel="prefetch" href="/blog/assets/js/28.b4750762.js"><link rel="prefetch" href="/blog/assets/js/29.bc541b6e.js"><link rel="prefetch" href="/blog/assets/js/3.36d57e10.js"><link rel="prefetch" href="/blog/assets/js/30.03626643.js"><link rel="prefetch" href="/blog/assets/js/31.3de3498c.js"><link rel="prefetch" href="/blog/assets/js/32.608b812d.js"><link rel="prefetch" href="/blog/assets/js/33.f095dff8.js"><link rel="prefetch" href="/blog/assets/js/34.f0f38ae4.js"><link rel="prefetch" href="/blog/assets/js/35.c2485cce.js"><link rel="prefetch" href="/blog/assets/js/36.4906d8c3.js"><link rel="prefetch" href="/blog/assets/js/37.82518b72.js"><link rel="prefetch" href="/blog/assets/js/38.1aacd487.js"><link rel="prefetch" href="/blog/assets/js/4.03448930.js"><link rel="prefetch" href="/blog/assets/js/5.94c766e5.js"><link rel="prefetch" href="/blog/assets/js/6.70ecef1b.js"><link rel="prefetch" href="/blog/assets/js/7.7cf92e69.js"><link rel="prefetch" href="/blog/assets/js/8.4e262c8d.js"><link rel="prefetch" href="/blog/assets/js/9.da56fe9f.js">
+    <link rel="stylesheet" href="/blog/assets/css/0.styles.d2bfba94.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/blog/" class="home-link router-link-active"><img src="logo.png" alt="凡尘轩" class="logo"> <span class="site-name can-hide">凡尘轩</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/Doc/" class="nav-link">
+  中文文档
+</a></div><div class="nav-item"><a href="/blog/Project/" class="nav-link">
+  项目工程
+</a></div><div class="nav-item"><a href="/blog/Technology/" class="nav-link router-link-active">
+  技术胶囊
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于本人" class="dropdown-title"><span class="title">关于本人</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于本人" class="mobile-dropdown-title"><span class="title">关于本人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/About/" class="nav-link">
+  联系我
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/jmsht7355zyf" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/jmsht7355" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4424090522232510" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/zheng-yi-fan-22" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://weibo.com/jmsht7355/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微博
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://space.bilibili.com/14080514" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  B站
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/blog/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/blog/Doc/" class="nav-link">
+  中文文档
+</a></div><div class="nav-item"><a href="/blog/Project/" class="nav-link">
+  项目工程
+</a></div><div class="nav-item"><a href="/blog/Technology/" class="nav-link router-link-active">
+  技术胶囊
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="关于本人" class="dropdown-title"><span class="title">关于本人</span> <span class="arrow down"></span></button> <button type="button" aria-label="关于本人" class="mobile-dropdown-title"><span class="title">关于本人</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/blog/About/" class="nav-link">
+  联系我
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/jmsht7355zyf" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/jmsht7355" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  码云
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4424090522232510" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://www.zhihu.com/people/zheng-yi-fan-22" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  知乎
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://weibo.com/jmsht7355/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微博
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://space.bilibili.com/14080514" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  B站
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Vue工程化基础配置</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#项目准备" class="sidebar-link">项目准备</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#项目结构" class="sidebar-link">项目结构</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#基本文件初始配置" class="sidebar-link">基本文件初始配置</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#main-js" class="sidebar-link">main.js</a></li><li class="sidebar-sub-header"><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#package-json" class="sidebar-link">package.json</a></li><li class="sidebar-sub-header"><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#router-index-js" class="sidebar-link">router-index.js</a></li><li class="sidebar-sub-header"><a href="/blog/Technology/vue%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%9F%BA%E7%A1%80%E9%85%8D%E7%BD%AE.html#store-index-js" class="sidebar-link">store-index.js</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="vue工程化基础配置"><a href="#vue工程化基础配置" class="header-anchor">#</a> <center>vue工程化基础配置</center></h1> <h2 id="项目准备"><a href="#项目准备" class="header-anchor">#</a> 项目准备</h2> <p>安装内容</p> <p><code>vue3</code>、<code>vite</code>、<code>router</code>、<code>vuex</code>、<code>scss</code>插件、<code>axios</code>。</p> <h2 id="项目结构"><a href="#项目结构" class="header-anchor">#</a> 项目结构</h2> <div class="language-项目结构 extra-class"><pre class="language-text"><code>-project
+	-node_modules
+	-public（公共文件夹）							
+	-src（主路径）
+		-assets
+			-scss
+				-common.scss
+		-component
+		-pages(页面结构)
+			-home
+				-Home.vue
+			-about
+				-About.vue
+		-router（路由）
+			-index.js
+		-store（状态管理）
+			-index.js
+		-App.vue
+		-main.js（主js文件）
+		-vue.config.js（vue配置文件）
+	-gitgnore
+	-index.html（入口html模板）
+	-package-lock.json
+	-package.json（项目配置文件）
+	-vite.config.js（vite配置文件）
+</code></pre></div><h2 id="基本文件初始配置"><a href="#基本文件初始配置" class="header-anchor">#</a> 基本文件初始配置</h2> <h3 id="main-js"><a href="#main-js" class="header-anchor">#</a> main.js</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 引入 VUE</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createApp <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue'</span>
+<span class="token keyword">import</span> App <span class="token keyword">from</span> <span class="token string">'./App.vue'</span>
+
+<span class="token comment">//引入全局路由对象</span>
+<span class="token keyword">import</span> Router <span class="token keyword">from</span> <span class="token string">&quot;./router/index.js&quot;</span><span class="token punctuation">;</span>
+<span class="token comment">// // 引入axios</span>
+<span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token comment">//引入vuex</span>
+<span class="token keyword">import</span> Store <span class="token keyword">from</span> <span class="token string">'./store/index.js'</span>
+
+<span class="token comment">// 引入全局公共样式</span>
+<span class="token keyword">import</span> <span class="token string">'./assets/scss/common.scss'</span>
+
+<span class="token comment">// 定义挂载</span>
+<span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token function">createApp</span><span class="token punctuation">(</span>App<span class="token punctuation">)</span>
+
+<span class="token comment">// 使用</span>
+app<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Router<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Store<span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">mount</span><span class="token punctuation">(</span><span class="token string">'#app'</span><span class="token punctuation">)</span>
+<span class="token comment">//vue 3中，axios不是一个插件（我们不能像app.use()）那样注册它，而是一个可以添加到应用程序</span>
+app<span class="token punctuation">.</span>config<span class="token punctuation">.</span>globalProperties<span class="token punctuation">.</span>axios<span class="token operator">=</span>axios
+</code></pre></div><h3 id="package-json"><a href="#package-json" class="header-anchor">#</a> package.json</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;msyy&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;dev&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vite&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vite build&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;serve&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vite preview&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.0.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vue-router&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.11&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vuex&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^4.0.2&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;@vitejs/plugin-vue&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.3.0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;@vue/compiler-sfc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^3.0.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;sass&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^1.37.5&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;vite&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.4.4&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="router-index-js"><a href="#router-index-js" class="header-anchor">#</a> router-index.js</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 引入 ROUTER HISTORY模式</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+    createRouter<span class="token punctuation">,</span>
+    createWebHistory
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vue-router'</span>
+
+<span class="token comment">//创建路由对象</span>
+<span class="token keyword">const</span> routes <span class="token operator">=</span> <span class="token punctuation">[</span>
+
+    <span class="token comment">//路由重定向</span>
+    <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'/'</span><span class="token punctuation">,</span>
+        redirect<span class="token operator">:</span> <span class="token string">'/home'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">//home页面</span>
+    <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'/home'</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">&quot;Home&quot;</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token comment">/* webpackChunkName: &quot;home&quot; */</span><span class="token string">'../pages/home/Home.vue'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token comment">//about页面</span>
+    <span class="token punctuation">{</span>
+        path<span class="token operator">:</span> <span class="token string">'/about'</span><span class="token punctuation">,</span>
+        name<span class="token operator">:</span> <span class="token string">&quot;About&quot;</span><span class="token punctuation">,</span>
+        <span class="token function-variable function">component</span><span class="token operator">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">import</span><span class="token punctuation">(</span><span class="token comment">/* webpackChunkName: &quot;about&quot; */</span><span class="token string">'../pages/about/About.vue'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+<span class="token punctuation">]</span>
+
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token function">createRouter</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token comment">//路由模式</span>
+    history<span class="token operator">:</span> <span class="token function">createWebHistory</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    routes
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">//导出路由对象</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> router
+</code></pre></div><h3 id="store-index-js"><a href="#store-index-js" class="header-anchor">#</a> store-index.js</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 引入vuex</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span>createStore<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+
+<span class="token comment">// 创建store对象</span>
+<span class="token keyword">const</span> store <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 全局共享状态（数据）存放</span>
+    state<span class="token operator">:</span> <span class="token punctuation">{</span>
+          
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    getters<span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 同步提交状态</span>
+    mutations<span class="token operator">:</span> <span class="token punctuation">{</span>
+       
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token comment">// 提交操作（可以是同步也可以是异步）给mutations</span>
+    actions<span class="token operator">:</span> <span class="token punctuation">{</span>
+        
+       
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// 导出</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> store
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/blog/assets/js/app.eb693d96.js" defer></script><script src="/blog/assets/js/2.afc338c8.js" defer></script><script src="/blog/assets/js/39.38a9037e.js" defer></script>
+  </body>
+</html>
